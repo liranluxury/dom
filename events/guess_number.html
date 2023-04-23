@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess Number</title>
+    <link rel="stylesheet" href="guess_number.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="header">Guess Number!</h1>
+      <p class="between">Number between 1 and 20</p>
+
+      <button type="button" id="again">Again!</button><br />
+    </header>
+    <main>
+      <section class="left">
+        <p class="box">Try guess!!</p>
+        <input type="number" class="guess" />
+        <button type="button" class="check">Check!</button>
+      </section>
+      <section class="right">
+        <p>Effort:<span class="score">20</span></p>
+        <p>Record:<span class="record">0</span></p>
+      </section>
+    </main>
+
+    <script src="guess_number.js"></script>
+  </body>
+</html>
