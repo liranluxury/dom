@@ -79,7 +79,7 @@ h6 {
 }
 
 /* до сюда все это обнуляет все встроенные стили */
-
+/* 
 .bigred {
   font-size: 20px;
   color: red;
@@ -88,4 +88,43 @@ h6 {
   color: green;
   font-size: 25px;
   font-style: italic;
+} */
+.arial {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  text-align-last: left;
+}
+
+.fontsize30 {
+  font-size: 30px;
+  text-align: center;
+}
+.italic {
+  font-style: italic;
+  font-size: 20px;
+}
+.font700 {
+  font-weight: 700;
+}
+.collored {
+  word-spacing: 35px;
+  font-size: 40px;
+  text-transform: capitalize;
+  color: red;
+  text-align: right;
+  text-shadow: 1px 1px 2px #000;
+}
+.textalihgn {
+  text-indent: 50px;
+  font-size: 20px;
+  color: green;
+  text-align: justify;
+  text-decoration: line-through;
+  line-height: 52px
+  ;
+}
+.lspace {
+  letter-spacing: 5px;
+}
+.whitespace {
+  white-space: nowrap;
 }
