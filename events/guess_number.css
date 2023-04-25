@@ -12,6 +12,11 @@ html {
   color: rgb(98, 0, 255);
   text-transform: uppercase;
 }
+
+.message {
+  color: rgb(6, 6, 124);
+  font-size: 2rem;
+}
 #again {
   display: flex;
 }

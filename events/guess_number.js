@@ -21,7 +21,7 @@ document.querySelector(".check").addEventListener("click", function () {
     document.querySelector("body").style.background = "pink";
     document.querySelector(".number").textContent = guess;
     if (score > record) {
-      record = score;
+      record = score - record;
       document.querySelector(".record").textContent = record;
     }
   } else if (guess !== secretNumber) {
@@ -38,4 +38,14 @@ document.querySelector(".check").addEventListener("click", function () {
     displayMessage("You lost!");
     document.querySelector(".score").textContent = 0;
   }
+});
+
+document.querySelector(".again").addEventListener("click", function () {
+  score = 20;
+  secretNumber = Math.trunc(Math.random() * 20) + 1;
+  displayMessage("Let's go guess!!");
+  document.querySelector(".score").textContent = score;
+  document.querySelector(".number").textContent = "?";
+  document.querySelector(".guess").value = "";
+  document.querySelector("body").style.background = "black";
 });
