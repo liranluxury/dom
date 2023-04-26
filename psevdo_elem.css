@@ -130,14 +130,35 @@ body {
   line-height: 24px;
   margin: 0 0 20px 0;
 }
+.block p:nth-child(odd) {
+  background-color: yellow;
+}
+/* к нечетным элементам */
+
+.block p:nth-child(even) {
+  background-color: rgb(207, 229, 241);
+}
+/* к четным элементам */
+
+.block p:last-child {
+  text-transform: uppercase;
+}
 
 .link {
   color: red;
 }
 
+.link:visited {
+  color: green;
+}
+
 .link:hover {
   text-decoration: underline;
   color: blue;
+}
+
+.link:active {
+  color: yellow;
 }
 
 .textinput {
@@ -148,6 +169,11 @@ body {
   width: 300px;
   margin: 0 0 10px 0;
 }
+
+.textinput:focus {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
 .textbutton {
   display: block;
   width: 300px;
@@ -160,9 +186,31 @@ body {
   text-transform: uppercase;
   margin: 0 0 30px 0;
 }
+.textbutton:hover {
+  background-color: blue;
+  color: yellow;
+}
+
+.textbutton:active {
+  background-color: rgb(198, 198, 253);
+  color: rgb(9, 73, 13);
+}
+
 .list {
 }
 .list li {
   font-size: 18px;
   margin: 0 0 15px 0;
+}
+.list li:first-child {
+  color: aqua;
+}
+.list li:last-child {
+  color: rgb(222, 16, 150);
+  font-weight: 700;
+}
+
+.list li:nth-child(2) {
+  color: rgb(178, 16, 89);
+  text-decoration: underline;
 }
