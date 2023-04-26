@@ -1,4 +1,83 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,
+*::before,
+*::after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+html,
 body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+/* до сюда обнуление стилей */
+/* body {
   padding: 30px;
 }
 .text {
@@ -11,4 +90,79 @@ body {
 .list li {
   font-size: 24px;
   margin: 0 0 20px 0;
+}
+.text::first-line {
+  color: rgb(115, 70, 221);
+}
+.text::first-letter {
+  color: rgb(234, 14, 14);
+  font-size: 50px;
+}
+.list li::before {
+  content: "";
+  /* content: ""; это обязательный элементб с пустыми кавычками в данном случае */
+/* width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: red;
+  display: inline-block;
+  margin: 0 10px 0 0;
+/* } */
+/* .list li::before {
+  content: "«";
+}
+.list li::after {
+  content: "»";
+} */
+/* .list li:hover::before {
+  background-color: yellow;
+} */
+/* Псевдокласс hover позволяет при наведении курсора менять стиль li . запмсывать в таком порядке - сначала псевдо класс потом псевдо элемент*/
+
+body {
+  padding: 30px;
+}
+.block {
+  margin: 0 0 30px 0;
+}
+.block p {
+  font-size: 18px;
+  line-height: 24px;
+  margin: 0 0 20px 0;
+}
+
+.link {
+  color: red;
+}
+
+.link:hover {
+  text-decoration: underline;
+  color: blue;
+}
+
+.textinput {
+  border: 1px solid gray;
+  height: 50px;
+  padding: 0 15px;
+  font-size: 18px;
+  width: 300px;
+  margin: 0 0 10px 0;
+}
+.textbutton {
+  display: block;
+  width: 300px;
+  height: 50px;
+  letter-spacing: 3.8px;
+  font-weight: 700;
+  background-color: aqua;
+  font-size: 18px;
+  color: rgb(27, 10, 207);
+  text-transform: uppercase;
+  margin: 0 0 30px 0;
+}
+.list {
+}
+.list li {
+  font-size: 18px;
+  margin: 0 0 15px 0;
 }

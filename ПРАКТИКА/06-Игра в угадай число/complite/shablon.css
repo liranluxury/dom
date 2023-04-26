@@ -45,6 +45,8 @@ textarea {
 input::-ms-clear {
   display: none;
 }
+/* При работе с псевдоэлементами доступ к крестику в инпуте */
+
 button {
   cursor: pointer;
 }
