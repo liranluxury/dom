@@ -79,7 +79,8 @@ h6 {
 
 body {
   background-image: url("/images/backgr.jpg");
-  background-size: 100%;
+  
+  /* background-size: 100%; */
   /* background-color:antiquewhite; */
 }
 
@@ -112,15 +113,18 @@ body {
 }
 
 .content-image {
-  box-shadow: 0 15px 65px rgba(189, 247, 189, 0.15);
-  background-color: white;
+  /* box-shadow: 0 15px 65px rgba(189, 247, 189, 0.15); */
+  /* background-color: white; */
   padding: 10px;
-  margin: 0 0 85px 0;
+  display: flex;
+  justify-content: center;
   /* align-content: center; */
+  margin: 0 0 85px 0;
 }
+
 .content-image img {
+  border: 12px solid white;
   max-width: 100%;
-  align-content: center;
 }
 
 .content-bottom {
@@ -196,6 +200,6 @@ body {
 }
 .content-bottom_info_link span {
   background: url(/images/strelka0.png) right no-repeat;
-  padding: 0 50px 0 0;
+  padding: 0 40px 0 0;
   /* верх право низ лево */
 }
