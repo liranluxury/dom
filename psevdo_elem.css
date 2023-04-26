@@ -120,6 +120,7 @@ h6 {
 /* Псевдокласс hover позволяет при наведении курсора менять стиль li . запмсывать в таком порядке - сначала псевдо класс потом псевдо элемент*/
 
 body {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   padding: 30px;
 }
 .block {
@@ -214,3 +215,33 @@ body {
   color: rgb(178, 16, 89);
   text-decoration: underline;
 }
+
+.blk {
+  border: 5px solid red;
+  margin: 0 auto;
+  /* с такими параметрами как  0 auto заставляет блочный элемент выстроитбся по центру */
+  max-width: 800px;
+  height: 400px;
+  position: relative;
+}
+.blk_1 {
+  background-color: aquamarine;
+}
+.blk_2 {
+  background-color: rgb(159, 255, 127);
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.blk_3 {
+  background-color: rgb(255, 127, 246);
+  /* position: relative;
+  z-index: 2; */
+}
+.blk div {
+  line-height: 50px;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+}
+/* обращаемся ко всем блокам blk в этом div чтобы не писать одинаковые свойства много раз */
