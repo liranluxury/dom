@@ -202,7 +202,13 @@ body {
 .list li {
   font-size: 18px;
   margin: 0 0 15px 0;
+  position: relative;
+  padding: 0 0 0 30px;
 }
+/* }
+При добавлении галочки к пунктам  у галочки   position: absolute; top: 0;
+left: 0; тогда как у самогосписка  position: relative; чтобы позиционирование проходило относительно списка а не страницы */
+/* 
 .list li:first-child {
   color: aqua;
 }
@@ -214,34 +220,41 @@ body {
 .list li:nth-child(2) {
   color: rgb(178, 16, 89);
   text-decoration: underline;
+} */
+.list li::before{
+  content:"";
+  background: url('/images/galochka00.png') 0 0 no-repeat;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: -3
+  px;
+  left: 0;
 }
 
-.blk {
+/* .blk {
   border: 5px solid red;
   margin: 0 auto;
   /* с такими параметрами как  0 auto заставляет блочный элемент выстроитбся по центру */
-  max-width: 800px;
+  /* max-width: 800px;
   height: 400px;
   position: relative;
-}
-.blk_1 {
+} */ */
+/* .blk_1 {
   background-color: aquamarine;
+  width: 50%;
+  left: 0;
+  position: absolute;
 }
 .blk_2 {
   background-color: rgb(159, 255, 127);
+  width: 50%;
+  right: 0;
   position: absolute;
-  left: 0px;
-  top: 0px;
 }
-.blk_3 {
-  background-color: rgb(255, 127, 246);
-  /* position: relative;
-  z-index: 2; */
-}
-.blk div {
-  line-height: 50px;
-  font-size: 18px;
-  font-weight: 700;
-  text-align: center;
-}
+.block_3 {
+  background-color: rgb(147, 181, 244);
+  position: relative;
+  z-index: 3;
+} */
 /* обращаемся ко всем блокам blk в этом div чтобы не писать одинаковые свойства много раз */
