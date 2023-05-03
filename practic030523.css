@@ -79,3 +79,36 @@ h6 {
   font-weight: 400;
 }
 /* до сюда обнуление стилей */
+
+html {
+  font-size: 62%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  color: black;
+  line-height: 1.5;
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  background: linear-gradient(
+    rgba(34, 193, 195, 1) 0% rgba(253, 187, 45, 1) 100%
+  );
+}
+
+h1 {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+p {
+  font-size: 18px;
+}
+
+.hidden {
+  display: none;
+}
+
+.modal {
+}
