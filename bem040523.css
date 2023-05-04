@@ -1,0 +1,160 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+/* При работе с псевдоэлементами доступ к крестику в инпуте */
+
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+/* до сюда обнуление стилей */
+body {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.about {
+  .about__body {
+    max-width: 823px;
+    margin: 0 auto;
+  }
+  .about__header {
+    margin: 0 0 65px 0;
+  }
+  .about__title {
+    margin-bottom: 30px;
+    color: rgb(226, 43, 144);
+  }
+  .about__text {
+    max-width: 688px;
+    color: rgb(174, 109, 180);
+    font-size: 14px;
+    font-weight: 300;
+    text-align: center;
+    line-height: 26px;
+    margin: 0 auto;
+  }
+  .about__row {
+    display: flex;
+    margin: 0 -15px;
+  }
+  .about__column {
+    flex: 0 0 33.33%;
+    padding: 0 15px;
+  }
+}
+/* значок & какбы вместо "родителя" .about */
+.title {
+  font-size: 34px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 8.95px;
+  position: relative;
+  text-align: center;
+  padding-bottom: 30px;
+}
+.title::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  bottom: 0;
+  height: 2px;
+  left: 50%;
+  background-color: rgb(130, 4, 136);
+  margin: 0 0 0 -55px;
+}
+
+.item-about {
+  .item-about__icon {
+    margin: 40px auto;
+    width: 92px;
+    height: 92px;
+    border-radius: 50%;
+    border: 2px solid rgb(130, 4, 136);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin: 0 0 40px 0; */
+  }
+  .item-about__title {
+    text-align: center;
+    color: rgb(226, 43, 144);
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 3.25px;
+    margin: 0 0 35px 0;
+  }
+  .item-about__text {
+    text-align: center;
+    color: rgb(174, 109, 180);
+  }
+}
