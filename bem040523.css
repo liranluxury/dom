@@ -88,7 +88,7 @@ body {
     margin: 0 auto;
   }
   .about__header {
-    margin: 0 0 65px 0;
+    margin: 85px 0 65px 0;
   }
   .about__title {
     margin-bottom: 30px;
@@ -129,7 +129,7 @@ body {
   bottom: 0;
   height: 2px;
   left: 50%;
-  background-color: rgb(130, 4, 136);
+  background-color: rgb(218, 183, 220);
   margin: 0 0 0 -55px;
 }
 
@@ -139,11 +139,10 @@ body {
     width: 92px;
     height: 92px;
     border-radius: 50%;
-    border: 2px solid rgb(130, 4, 136);
+    border: 2px solid rgb(218, 183, 220);
     display: flex;
     align-items: center;
     justify-content: center;
-    /* margin: 0 0 40px 0; */
   }
   .item-about__title {
     text-align: center;
