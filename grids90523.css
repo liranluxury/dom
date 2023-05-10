@@ -13,6 +13,15 @@
   border: 1px dashed rgb(98, 96, 96);
   padding: 20px;
 }
+.grid-auto__item_4 {
+  /* grid-row-start: 1; */
+  grid-row-start: span 3;
+  grid-row-end: 4;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  background-color: aqua;
+  border: 1px dashed rgb(98, 96, 96);
+}
 .grid-wrapper {
   display: grid;
 
@@ -42,4 +51,18 @@
 }
 .grid-content {
   grid-area: content;
+}
+
+.grid-auto {
+  display: grid;
+  grid-template: 1fr 1fr / repeat(3, 1fr);
+  grid-auto-rows: 200px;
+  /* для управления высотой седьмого элемента который 
+  не входит в 2 строки т.е. неявный элемент или неявный ряд */
+}
+.grid-auto__item {
+  text-align: center;
+  border: 1px dashed rgb(98, 96, 96);
+  padding: 20px;
+  font-size: 30px;
 }
