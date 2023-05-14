@@ -80,7 +80,7 @@ h6 {
 }
 /* до сюда обнуление стилей */
 
-.grid {
+/* .grid {
   display: grid;
   border: 1px solid grey;
   grid-template-columns: repeat(6, [col] 1fr);
@@ -98,14 +98,14 @@ h6 {
   grid-column-end: 4;
   grid-row-start: 2;
   grid-row-end: 4; */
-}
+/* }
 .grid-item2 {
   background-color: blue;
   grid-column: span 2;
-  grid-row: span 2; то же самое что и ниже
-  /* grid-column: col 3/ col 5;
+  grid-row: span 2; то же самое что и ниже */
+/* grid-column: col 3/ col 5;
   grid-row: row 1/ row 3; */
-}
+/* }
 .grid-item3 {
   background-color: blueviolet;
   grid-column: 5/5;
@@ -130,21 +130,52 @@ h6 {
   background-color: blueviolet;
   grid-column:  2/ 4;
  
-}
-.grid-item10 {
+} */
+/* .grid-item10 {
   background-color: blueviolet;
    grid-column:  4/ 6;
   
 }
 .grid-item11 {
   background-color: blueviolet;
-}
+} */
 
-
+/* 
 .grid22{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 300px;
-    margin-top: 15px;
+    grid-template-rows: 300px; */
+*/
+    /* align-items: end;
+    justify-items: end; */
+    /* margin-top: 15px;
     background-color: rgb(186, 186, 241);
+}
+.grid-item22{ */
+    /* align-self: center;
+    justify-self: center; */
+/* } */
+
+body {
+  display: grid;
+  grid-template-columns: minmax(150px, 200px) 1fr minmax(150px, 200px);
+  grid-template-areas:
+    "header header header"
+    "nav main aside"
+    "footer footer footer";
+}
+header {
+  grid-area: header;
+}
+nav {
+  grid-area: nav;
+}
+aside {
+  grid-area: aside;
+}
+main {
+  grid-area: main;
+}
+footer {
+  grid-area: footer;
 }
