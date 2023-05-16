@@ -179,3 +179,25 @@ main {
 footer {
   grid-area: footer;
 }
+
+/* **************************
+*************************
+************************* */
+
+.main {
+  font-size: 22px;
+  color: aqua;
+  float: left;
+  width: 70%;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.sidebar {
+  font-size: 14px;
+  color: aquamarine;
+  float: left;
+  width: 30%;
+  box-sizing: border-box;
+  padding: 20px;
+}
