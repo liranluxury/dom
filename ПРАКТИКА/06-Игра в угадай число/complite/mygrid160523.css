@@ -25,16 +25,7 @@
 .item10 {
   grid-column: span 2;
 }
-.container2 {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 300px;
-  width: 600px;
-  height: 300px;
-  border: 1px solid red;
-  /* align-items:center;
-  justify-items: center; */
-}
+
 .container__grid {
   align-self: center;
   justify-self: center;
@@ -60,11 +51,27 @@
 .grid-item2 {
   width: 100px;
   height: 100px;
-
   background-color: rgb(183, 0, 255);
 }
 .grid-item3 {
   width: 100px;
   height: 100px;
+
   background-color: rgb(0, 255, 64);
+}
+
+.grid3 {
+  display: grid;
+
+  /* ********************************** */
+  border: 1px solid blue;
+  grid-gap: 10px;
+ 
+  grid-template-columns: none;
+  height: 500px;
+  width: 600px;
+}
+.grid-box {
+  background-color: blueviolet;
+ 
 }
