@@ -139,6 +139,7 @@ a.btn-big {
   padding-bottom: 51px;
 }
 .how-it-works-header {
+  padding-bottom: 52px;
   display: flex;
   justify-content: space-between;
 }
@@ -160,6 +161,7 @@ a.btn-big {
   color: #01996d;
 }
 .how-it-works-header-content {
+  padding-top: 55px;
   line-height: 150%;
   max-width: 671px;
   font-weight: 500;
